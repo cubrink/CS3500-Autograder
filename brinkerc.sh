@@ -34,6 +34,7 @@ unzip -qo ./sampleInput.zip -d ./sample_input/
 # Ensures that all provided files are converted to unix line endings
 find ./sample_input/ -type f -print0 | xargs -0 dos2unix --
 find ./expected_output/ -type f -print0 | xargs -0 dos2unix --
+find ./submissions/ -type f -print0 | xargs -0 dos2unix --
 
 
 
