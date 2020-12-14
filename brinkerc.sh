@@ -45,7 +45,7 @@ find ./submissions/ -type f -print0 | xargs -0 dos2unix --
 ########################################
 
 # Calculate total amount of files that will be graded
-total_files=$(ls ./expected_output/*.out | wc -w) 
+total_files=$(ls ./expected_output/*.out | wc -l) 
 
 # Perform test on each submission
 for submission in $(ls ./submissions/*.pl); do
