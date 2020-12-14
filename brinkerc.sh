@@ -54,8 +54,6 @@ for submission in $(ls ./submissions/*.pl); do
     mkdir -p ./student_outputs/"$user"/
 
     same_files=0
-    total_files=$(ls ./expected_output/*.out | wc -l)
-
     suspicion=0     # Flag to mark if we suspect student is hard-coding solutions
 
     # Run input files
